@@ -72,6 +72,8 @@ public class GameManager : MonoBehaviour
     public AudioClip sword_effect_1;
     public AudioClip sword_effect_2;
 
+    public bool hpBarTremble = false;
+
     private void Awake()
     {
         gm = this;
@@ -304,6 +306,7 @@ public class GameManager : MonoBehaviour
 
     public void next_monster()
     {
+        GameObject.Find("Button_TurnEnd").GetComponent<Button>().enabled = false;
         used_corrup.Clear();
         used_resurr.Clear();
         StartCoroutine("next_delay");
@@ -339,6 +342,7 @@ public class GameManager : MonoBehaviour
         Destroy(card4);
         buff_list.Clear();
         refresh_buff_list();
+        GameObject.Find("Button_TurnEnd").GetComponent<Button>().enabled = true;
         turn_start();
 
     }
@@ -362,6 +366,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator IncreaseGauge(int amount, float delay)
     {
         yield return new WaitForSeconds(delay);
+        hpBarTremble = true;
         for (int i = 0; i < amount; i++)
         {
             yield return new WaitForSeconds(0.02f);
@@ -369,8 +374,10 @@ public class GameManager : MonoBehaviour
         }
         if (destructionGauge >= 100)
         {
+            hpBarTremble = false;
             StartCoroutine(GameOverCoroutine());
         }
+        hpBarTremble = false;
     }
     public IEnumerator DecreaseGauge(int amount, float delay)
     {
