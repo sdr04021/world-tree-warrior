@@ -175,6 +175,7 @@ public class TestCard : MonoBehaviour
             {
                 //GameManager.gm.destructionGauge += 5;
                 StartCoroutine(GameManager.gm.IncreaseGauge(5, 0));
+                
             }
             else if (GameManager.gm.debuff2) // ต๐น๖วม 2
             {
