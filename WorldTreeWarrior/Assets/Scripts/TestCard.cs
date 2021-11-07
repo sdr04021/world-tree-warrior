@@ -24,7 +24,9 @@ public class TestCard : MonoBehaviour
 
             if (hit.collider != null)
             {
-                transform.localScale = new Vector2(4.0f, 4.0f);
+                Debug.Log(hit.collider.name);
+                hit.transform.localScale = new Vector2(4.0f, 4.0f);
+                //transform.localScale = new Vector2(4.0f, 4.0f);
             }
             else transform.localScale = new Vector2(2.0f, 2.0f);
         }

@@ -57,6 +57,4 @@ public class GameManager : MonoBehaviour
         deck[pick] = deck[9 - used];
         used++;
     }
-
-    
 }

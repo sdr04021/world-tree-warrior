@@ -20,6 +20,6 @@ public class ButtonTurnEnd : MonoBehaviour
 
     void turnEndClick()
     {
- 
+
     }
 }
