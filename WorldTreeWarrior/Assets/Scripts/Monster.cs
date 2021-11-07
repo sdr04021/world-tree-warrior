@@ -76,13 +76,14 @@ public class Monster : MonoBehaviour
             //GameManager.gm.used_corrup.Remove(5);
         }
 
-        if (GameManager.gm.used_resurr.Contains(2)) // resurr 5번
+        if (GameManager.gm.used_resurr.Contains(2)) // resurr 2번
         {
-            damage = (int)(damage * 0.7f);
+            damage = (int)(damage * 0.5f);
             GameManager.gm.used_resurr.Remove(2);
-            GameManager.gm.buff_list.Remove("몬스터에게 받는 데미지를 30% 감소\n");
+            GameManager.gm.buff_list.Remove("몬스터에게 받는 데미지를 50% 감소\n");
             GameManager.gm.refresh_buff_list();
         }
+        if (GameManager.gm.resurr9) damage = 0;
         Attack_pattern();
 
         //GameManager.gm.destructionGauge += damage;
@@ -116,7 +117,7 @@ public class Monster : MonoBehaviour
                 break;
             case 4:
                 StartCoroutine(GameManager.gm.monsterAttacksEffect());
-                StartCoroutine(GameManager.gm.IncreaseGauge(damage + 10, 2.0f));
+                StartCoroutine(GameManager.gm.IncreaseGauge((int)(damage*1.2f), 2.0f));
                 //GameManager.gm.destructionGauge += (damage+10);
                 GameManager.gm.debuff3 = true;
                 GameManager.gm.buff_list.Add("카드 드로우 수 1 감소\n");

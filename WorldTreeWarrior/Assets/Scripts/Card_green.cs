@@ -59,9 +59,9 @@ public class Card_green : MonoBehaviour
                 increased_maxCost = 4;
                 break;
             case 8:
-                cost = 4;
+                cost = 7;
                 do_damage = 0;
-                reduced_end_gauge = 5;
+                reduced_end_gauge = 20;
                 break;
             case 9:
                 cost = 15;
