@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
     public Animator curAttackEffect;
     public Animator enemyMagicEffect;
     public Animator attackedEffect;
+    public Animator corruptedEffect;
 
     private void Awake()
     {
@@ -66,6 +67,7 @@ public class GameManager : MonoBehaviour
         curAttackEffect = GameObject.Find("cur_attack_effect").GetComponent<Animator>();
         enemyMagicEffect = GameObject.Find("enemy_magic_effect").GetComponent<Animator>();
         attackedEffect = GameObject.Find("AttackedEffect").GetComponent<Animator>();
+        corruptedEffect = GameObject.Find("CorruptedEffect").GetComponent<Animator>();
     }
 
     // Start is called before the first frame update
@@ -238,7 +240,9 @@ public class GameManager : MonoBehaviour
             refresh_buff_list();
         }
 
-        destructionGauge += total_increase_gauge;
+        //destructionGauge += total_increase_gauge;
+        StartCoroutine(IncreaseGauge(total_increase_gauge, 0));
+        if (total_increase_gauge > 0) corruptedEffect.SetTrigger("Trigger");
     }
 
     public void turn_start()
@@ -343,7 +347,6 @@ public class GameManager : MonoBehaviour
         }
         if (destructionGauge >= 100)
         {
-            destructionGauge = 100;
             StartCoroutine(GameOverCoroutine());
         }
     }
