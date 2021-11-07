@@ -337,6 +337,11 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(0.02f);
             if (destructionGauge < 100) destructionGauge++;
         }
+        if (destructionGauge >= 100)
+        {
+            destructionGauge = 100;
+            StartCoroutine(GameOverCoroutine());
+        }
     }
     public IEnumerator DecreaseGauge(int amount, float delay)
     {
@@ -346,11 +351,23 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(0.02f);
             if (destructionGauge > 0) destructionGauge--;
         }
+        if (destructionGauge < 0) destructionGauge = 0;
     }
     IEnumerator PlayerTurnStartAfterDelay()
     {
         yield return new WaitForSeconds(2f);
         turn_start();
+    }
+    IEnumerator GameOverCoroutine()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GameOver();
+    }
+    void GameOver()
+    {
+        GameObject.Find("GameOverCanvas").transform.Find("GameOverImage").gameObject.SetActive(true);
+        GameObject.Find("GameOverCanvas").transform.Find("GameOverButton").gameObject.SetActive(true);
+        Time.timeScale = 0;
     }
 }
 
