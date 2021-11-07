@@ -2441,6 +2441,7 @@ MonoBehaviour:
   used_resurr: 
   cost_zero: 0
   used_count: 0
+  resurr9: 0
   monster1: {fileID: 668191431900853504, guid: 951d8fe6fae693a4dbcff78d5385e66d, type: 3}
   monster2: {fileID: 505104988540390288, guid: bc2b22db29b40f84d966ff0f75e4a606, type: 3}
   monster3: {fileID: 505104988540390288, guid: 2b8f92ef709e3e54090642fe87d18a45, type: 3}
@@ -2741,7 +2742,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 98c94bb6f19b8b44d878bb3333c5ddd5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.048
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
