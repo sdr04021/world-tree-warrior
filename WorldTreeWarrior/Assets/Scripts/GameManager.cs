@@ -61,9 +61,19 @@ public class GameManager : MonoBehaviour
     public Animator attackedEffect;
     public Animator corruptedEffect;
 
+    public AudioSource audioSource;
+    public AudioClip audio_hit;
+    public AudioClip audio_magic_1;
+    public AudioClip audio_magic_2;
+    public AudioClip audio_magic_3;
+    public AudioClip audio_magic_hit;
+    public AudioClip sword_effect_1;
+    public AudioClip sword_effect_2;
+
     private void Awake()
     {
         gm = this;
+        audioSource = GetComponent<AudioSource>();
         resurAtackEffect = GameObject.Find("resur_attack_effect").GetComponent<Animator>();
         curAttackEffect = GameObject.Find("cur_attack_effect").GetComponent<Animator>();
         enemyMagicEffect = GameObject.Find("enemy_magic_effect").GetComponent<Animator>();
@@ -243,7 +253,11 @@ public class GameManager : MonoBehaviour
 
         //destructionGauge += total_increase_gauge;
         StartCoroutine(IncreaseGauge(total_increase_gauge, 0));
-        if (total_increase_gauge > 0) corruptedEffect.SetTrigger("Trigger");
+        if (total_increase_gauge > 0)
+        {
+            corruptedEffect.SetTrigger("Trigger");
+            PlaySound("MAGICHIT");
+        }
     }
 
     public void turn_start()
@@ -336,6 +350,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator monsterAttacksEffect()
     {
         yield return new WaitForSeconds(1.0f);
+        PlaySound("MAGICHIT");
         attackedEffect.SetTrigger("Trigger");
     }
     public IEnumerator IncreaseGauge(int amount, float delay)
@@ -378,6 +393,36 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
         SceneManager.LoadScene("GameOverScene");
+    }
+
+    public void PlaySound(string action)
+    {
+        switch (action)
+        {
+            case "HIT":
+                audioSource.clip = audio_hit;
+                break;
+            case "MAGIC1":
+                audioSource.clip = audio_magic_1;
+                break;
+            case "MAGIC2":
+                audioSource.clip = audio_magic_2;
+                break;
+            case "MAGIC3":
+                audioSource.clip = audio_magic_3;
+                break;
+            case "MAGICHIT":
+                audioSource.clip = audio_magic_hit;
+                break;
+            case "SWORDEFFECT1":
+                audioSource.clip = sword_effect_1;
+                break;
+            case "SWORDEFFECT2":
+                audioSource.clip = sword_effect_2;
+                break;
+        }
+
+        audioSource.Play();
     }
 }
 

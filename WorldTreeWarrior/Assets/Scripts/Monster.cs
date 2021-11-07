@@ -43,10 +43,18 @@ public class Monster : MonoBehaviour
 
     public void Attacked(int damage, bool isCorrupt)
     {
-        if(isCorrupt) GameManager.gm.curAttackEffect.SetTrigger("Trigger");
-        else GameManager.gm.resurAtackEffect.SetTrigger("Trigger");
+        if (isCorrupt)
+        {
+            GameManager.gm.curAttackEffect.SetTrigger("Trigger");
+            //GameManager.gm.PlaySound("MAGIC3");
+        }
+        else
+        {
+            GameManager.gm.resurAtackEffect.SetTrigger("Trigger");
+            GameManager.gm.PlaySound("MAGIC1");
+        }
         //curHP -= damage;
-        StartCoroutine(monsterAttackedEffect());
+        StartCoroutine(monsterAttackedEffect(isCorrupt));
         StartCoroutine(DecreaseHP(damage));
     }
 
@@ -84,6 +92,7 @@ public class Monster : MonoBehaviour
     public void Attack_pattern()
     {
         int random = Random.Range(1, 5); // 1~4Áß ·£´ý
+        GameManager.gm.PlaySound("MAGIC2");
         GameManager.gm.enemyMagicEffect.SetTrigger("Trigger");
         switch (random)
         {
@@ -118,9 +127,10 @@ public class Monster : MonoBehaviour
         }
     }
 
-    IEnumerator monsterAttackedEffect()
+    IEnumerator monsterAttackedEffect(bool isCorrupt)
     {
         yield return new WaitForSeconds(0.75f);
+        if (isCorrupt) GameManager.gm.PlaySound("MAGIC3");
         tremble = true;
         yield return new WaitForSeconds(0.5f);
         tremble = false;
