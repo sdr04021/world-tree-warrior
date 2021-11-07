@@ -112,6 +112,10 @@ public class GameManager : MonoBehaviour
         debuff1 = false;
         debuff2 = false;
         cost_zero = false;
+        buff_list.Remove("플레이어가 공격할 때마다 멸망 게이지+5\n");
+        buff_list.Remove("플레이어가 주는 데미지 50% 감소\n");
+        buff_list.Remove("카드 드로우 수 1 감소\n");
+        refresh_buff_list();
 
         // 몬스터 공격
 

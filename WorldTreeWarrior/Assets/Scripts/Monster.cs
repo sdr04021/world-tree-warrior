@@ -95,10 +95,14 @@ public class Monster : MonoBehaviour
                 break;
             case 2:
                 GameManager.gm.debuff1 = true;
+                GameManager.gm.buff_list.Add("플레이어가 공격할 때마다 멸망 게이지+5\n");
+                GameManager.gm.refresh_buff_list();
                 Debug.Log("디버프1");
                 break;
             case 3:
                 GameManager.gm.debuff2 = true;
+                GameManager.gm.buff_list.Add("플레이어가 주는 데미지 50% 감소\n");
+                GameManager.gm.refresh_buff_list();
                 Debug.Log("디버프2");
                 break;
             case 4:
@@ -106,6 +110,8 @@ public class Monster : MonoBehaviour
                 StartCoroutine(GameManager.gm.IncreaseGauge(damage + 10, 2.0f));
                 //GameManager.gm.destructionGauge += (damage+10);
                 GameManager.gm.debuff3 = true;
+                GameManager.gm.buff_list.Add("카드 드로우 수 1 감소\n");
+                GameManager.gm.refresh_buff_list();
                 Debug.Log("데미지: " + (damage + 10));
                 Debug.Log("디버프3");
                 break;
