@@ -52,7 +52,7 @@ public class Card_red : MonoBehaviour
                 break;
             case 6:
                 cost = 3;
-                do_damage = 0;
+                do_damage = 10;
                 increase_Gauge = 2;
                 // 1장 버리고 2장 드로우
                 break;
@@ -78,7 +78,8 @@ public class Card_red : MonoBehaviour
                 reduced_maxCost = 3; // 코스트감소
                 break;
             case 10:
-                cost = 1;
+                cost = 5;
+                do_damage = 80;
                 increase_Gauge = 250;
                 // 모든 카드 효과 두배?
                 break;

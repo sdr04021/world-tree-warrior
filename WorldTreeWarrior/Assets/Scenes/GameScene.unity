@@ -389,7 +389,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 7
+  m_text: 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b4fb7fed05cf781439bb74b14057f226, type: 2}
   m_sharedMaterial: {fileID: -2399574027781275948, guid: b4fb7fed05cf781439bb74b14057f226, type: 2}
@@ -877,7 +877,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: be7af6a0208470a4f9a45f2c43d88de8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b275ad39edbaf1c428fdc8adeba69c21, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1253,7 +1253,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 83fe724fec2efa54481f1df82fd54ecf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 953afb95936d4524a8c2f8c0ab037ddd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1272,7 +1272,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194158981}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -3, z: 10}
+  m_LocalPosition: {x: -2.56, y: -3, z: 10}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 820628245}
@@ -3105,7 +3105,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 7963cf262fefc054eb3acf5c3e005780, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 46c07c9229b729e4eb0df6bc0a9f5775, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4994,7 +4994,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: c42a0b2aa5457bb468de44df06323aa4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 93d518e552463474b887651c5858d76f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5138,8 +5138,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uB2E4\uC74C \uD134\uC5D0 \uC0AC\uC6A9\uD558\uB294\uCE74\uB4DC \uD55C\uC7A5
-    \uB2F9 \uBA78\uB9DD\uAC8C\uC774\uC9C0 -2"
+  m_text: "\uC801\uC5D0\uAC8C 10\uC758 \uB370\uBBF8\uC9C0\uB97C \uC90D\uB2C8\uB2E4."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0d359a76798306e4fa9dad389aff2675, type: 2}
   m_sharedMaterial: {fileID: 5981089629630152124, guid: 0d359a76798306e4fa9dad389aff2675, type: 2}
@@ -5357,7 +5356,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: ce8fb55197d294440b3aae880446e2ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a62964b1bd0dc004c9d5f83133ade32f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5591,8 +5590,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: " \uBA78\uB9DD\uAC8C\uC774\uC9C0 +2. 1\uC7A5\uC744 \uB79C\uB364\uC73C\uB85C
-    \uBC84\uB9AC\uACE0 2\uC7A5\uC744 \uB4DC\uB85C\uC6B0 \uD569\uB2C8\uB2E4."
+  m_text: " \uC801\uC5D0\uAC8C 10\uC758 \uB370\uBBF8\uC9C0\uB97C \uC90D\uB2C8\uB2E4.
+    \uBA78\uB9DD\uAC8C\uC774\uC9C0 +2."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0d359a76798306e4fa9dad389aff2675, type: 2}
   m_sharedMaterial: {fileID: 5981089629630152124, guid: 0d359a76798306e4fa9dad389aff2675, type: 2}
@@ -7004,7 +7003,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: df1ea4b7204234347aac307bdbe33bec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 92bc3bcbb8db14948956c11b395cb9ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7221,9 +7220,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC801\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C 15 \uC90D\uB2C8\uB2E4. \uC774\uBC88\uD134\uC5D0
-    \uC0AC\uC6A9\uD558\uB294 \uBAA8\uB4E0 \uCE74\uB4DC\uB97C \uB450\uBC88 \uC801\uC6A9
-    \uC2DC\uD0B5\uB2C8\uB2E4. \uB2E4\uC74C\uD134 \uBA78\uB9DD\uAC8C\uC774\uC9C0 +250 "
+  m_text: "\uC801\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C 80 \uC90D\uB2C8\uB2E4. \uB2E4\uC74C
+    \uD134 \uBA78\uB9DD\uAC8C\uC774\uC9C0 +250 "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0d359a76798306e4fa9dad389aff2675, type: 2}
   m_sharedMaterial: {fileID: 5981089629630152124, guid: 0d359a76798306e4fa9dad389aff2675, type: 2}
@@ -7877,8 +7875,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC801\uC5D0\uAC8C \uB370\uBBF8\uC9C0 10\uC744 \uC90D\uB2C8\uB2E4. \uB2E4\uC74C\uD134\uC5D0
-    \uCE74\uB4DC\uB97C \uD55C\uC7A5 \uB354 \uB4DC\uB85C\uC6B0 \uD569\uB2C8\uB2E4."
+  m_text: "\uC801\uC5D0\uAC8C \uB370\uBBF8\uC9C0 10\uC744 \uC90D\uB2C8\uB2E4."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0d359a76798306e4fa9dad389aff2675, type: 2}
   m_sharedMaterial: {fileID: 5981089629630152124, guid: 0d359a76798306e4fa9dad389aff2675, type: 2}
@@ -8433,7 +8430,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: e4615ee9a0dc5d84aa4b87d13e4746f9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7564252c350a271468857e31b060fd33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8729,9 +8726,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   card_num: 10
-  cost: 1
-  do_damage: 15
-  increase_Gauge: 10
+  cost: 5
+  do_damage: 80
+  increase_Gauge: 250
   draw_num: 0
   get_damge_percent: 0
   increased_damage: 0
@@ -8836,7 +8833,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: aab0be2a39819c34387ed2ddcbd6d01a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d8cb673bbc6b7664c9c1ddc7346b0831, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9003,7 +9000,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 2550a1c5a09b0564a91b2e35460e3575, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2eb5fddf467be584f9fd110d31b6cd3d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9171,7 +9168,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: a16079c8604781342842aa28ab20b840, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2c8d89297d157474fa20234af1f13c3c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9338,7 +9335,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: d881965a08cb9ed4c9e21f1d46d9febe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 580db2759c39c55409db1eec4ec79b4a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9421,7 +9418,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: 10
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b4fb7fed05cf781439bb74b14057f226, type: 2}
   m_sharedMaterial: {fileID: -2399574027781275948, guid: b4fb7fed05cf781439bb74b14057f226, type: 2}
@@ -9825,8 +9822,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uBA78\uB9DD\uAC8C\uC774\uC9C0 -5,  \uC774\uBC88 \uD134\uC5D0 \uC801\uC5D0\uAC8C
-    \uB370\uBBF8\uC9C0\uB97C \uBC1B\uC744 \uB54C \uB9C8\uB2E4 \uBA78\uB9DD\uAC8C\uC774\uC9C0-1"
+  m_text: "\uBA78\uB9DD\uAC8C\uC774\uC9C0 -5"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0d359a76798306e4fa9dad389aff2675, type: 2}
   m_sharedMaterial: {fileID: 5981089629630152124, guid: 0d359a76798306e4fa9dad389aff2675, type: 2}
@@ -10044,7 +10040,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: a2607804bcf9916419ef5fef3f87099b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c0f0a774d859664f97565962c3ed82d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10312,7 +10308,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 993458df5ab4b3f4c979a95a79b8be86, type: 3}
+  m_Sprite: {fileID: 21300000, guid: da81cee8a7e1919469b4c967cdbfaa33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10473,8 +10469,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   card_num: 10
-  cost: 7
-  do_damage: 0
+  cost: 3
+  do_damage: 10
   reduced_end_gauge_percent: 0
   reduced_end_gauge: 0
   draw_num: 0
@@ -10555,7 +10551,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: eaf4efe6776c92f4ab33884c4036d72d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bb6d5a6c1fc8b014085828b88745b2fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11035,7 +11031,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: db8df7084d28be94199220ae8e7623e5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 57a1db5c8337612498ce8d41727e9c71, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11202,7 +11198,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 9b6ab35ff4d2b6343b8ecdaec3953795, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 780d6dab9a81b1549b72171ac7d38f86, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11505,7 +11501,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 58649b635a9c18145a5a7ac0781b6dc5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c2fc49ff5ded6484e877ce6d5d335166, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12190,7 +12186,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: ec78dc194a057a14298ea25f322c73db, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9e2262eeaa41e34489512466565af53f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12415,7 +12411,7 @@ MonoBehaviour:
   cost: 5
   do_damage: 25
   reduced_end_gauge_percent: 0
-  reduced_end_gauge: 0
+  reduced_end_gauge: 3
   draw_num: 0
   reduced_damge_percent: 0
   reduced_damge: 3
@@ -12494,7 +12490,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 01a98349d1e5c6b409e737d9d60c6749, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f75067d807557c94b807286404dca19d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12513,7 +12509,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052458132}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -3, z: 10}
+  m_LocalPosition: {x: 0, y: -6.87, z: 10}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 1263694698}
@@ -13057,14 +13053,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   card_num: 6
-  cost: 2
-  do_damage: 0
-  increase_Gauge: 10
+  cost: 3
+  do_damage: 10
+  increase_Gauge: 2
   draw_num: 0
   get_damge_percent: 0
-  increased_damage: 0.5
+  increased_damage: 0
   reduced_maxCost: 0
-  turn: 1
+  turn: 0
 --- !u!61 &2115922570
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13164,7 +13160,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: fc32d70988537ad42975d8d7cc9e042a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a168b325f00b6b040b866ad06f126a54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
