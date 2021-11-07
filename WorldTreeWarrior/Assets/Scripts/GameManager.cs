@@ -399,6 +399,7 @@ public class GameManager : MonoBehaviour
 
     public void PlaySound(string action)
     {
+        audioSource.volume = 1.0f;
         switch (action)
         {
             case "HIT":
@@ -412,6 +413,7 @@ public class GameManager : MonoBehaviour
                 break;
             case "MAGIC3":
                 audioSource.clip = audio_magic_3;
+                audioSource.volume = 0.15f;
                 break;
             case "MAGICHIT":
                 audioSource.clip = audio_magic_hit;
