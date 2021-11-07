@@ -2442,6 +2442,7 @@ MonoBehaviour:
   cost_zero: 0
   used_count: 0
   resurr9: 0
+  resurr7: 0
   monster1: {fileID: 668191431900853504, guid: 951d8fe6fae693a4dbcff78d5385e66d, type: 3}
   monster2: {fileID: 505104988540390288, guid: bc2b22db29b40f84d966ff0f75e4a606, type: 3}
   monster3: {fileID: 505104988540390288, guid: 2b8f92ef709e3e54090642fe87d18a45, type: 3}
@@ -7333,7 +7334,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349244069}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -3, z: 10}
+  m_LocalPosition: {x: -2.33, y: -3, z: 10}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 2053179767}

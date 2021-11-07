@@ -205,8 +205,14 @@ public class TestCard : MonoBehaviour
             if (GameManager.gm.used_resurr.Contains(7)) // resurr 7¹ø
             {
                 //GameManager.gm.destructionGauge -= 4;
-                StartCoroutine(GameManager.gm.DecreaseGauge(10, 0));
-                if (GameManager.gm.destructionGauge < 0) GameManager.gm.destructionGauge = 0;
+                GameManager.gm.resurr7++;
+                Debug.Log(GameManager.gm.resurr7);
+                if (GameManager.gm.resurr7 == 1)
+                {
+                    StartCoroutine(GameManager.gm.DecreaseGauge(10, 0));
+                    if (GameManager.gm.destructionGauge < 0) GameManager.gm.destructionGauge = 0;
+                }
+             
             }
 
             if (GameManager.gm.used_resurr.Contains(8)) // resurr 8¹ø
