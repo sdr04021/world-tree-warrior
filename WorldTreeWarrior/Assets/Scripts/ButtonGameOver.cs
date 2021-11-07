@@ -22,7 +22,6 @@ public class ButtonGameOver : MonoBehaviour
     {
         //GameManager 변수 초기화
 
-
         Time.timeScale = 1;
         SceneManager.LoadScene("TitleScene");
     }

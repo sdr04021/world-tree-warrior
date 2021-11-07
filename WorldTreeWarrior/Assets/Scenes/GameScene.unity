@@ -2454,6 +2454,7 @@ MonoBehaviour:
   curAttackEffect: {fileID: 0}
   enemyMagicEffect: {fileID: 0}
   attackedEffect: {fileID: 0}
+  corruptedEffect: {fileID: 0}
 --- !u!4 &433898239
 Transform:
   m_ObjectHideFlags: 0
@@ -2779,7 +2780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &610810227
 Animator:
   serializedVersion: 3

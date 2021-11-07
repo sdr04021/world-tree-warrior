@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -369,14 +370,14 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator GameOverCoroutine()
     {
+        GameObject.Find("GameOverCanvas").transform.Find("GameOverImage").gameObject.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         GameOver();
     }
     void GameOver()
     {
-        GameObject.Find("GameOverCanvas").transform.Find("GameOverImage").gameObject.SetActive(true);
-        GameObject.Find("GameOverCanvas").transform.Find("GameOverButton").gameObject.SetActive(true);
         Time.timeScale = 0;
+        SceneManager.LoadScene("GameOverScene");
     }
 }
 
