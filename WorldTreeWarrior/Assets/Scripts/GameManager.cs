@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -130,6 +131,9 @@ public class GameManager : MonoBehaviour
         buff_list.Remove("플레이어가 주는 데미지 50% 감소\n");
         buff_list.Remove("카드 드로우 수 1 감소\n");
         refresh_buff_list();
+
+        //turn end 버튼 비활성화
+        GameObject.Find("Button_TurnEnd").GetComponent<Button>().enabled = false;
 
         // 몬스터 공격
 
@@ -383,6 +387,7 @@ public class GameManager : MonoBehaviour
     IEnumerator PlayerTurnStartAfterDelay()
     {
         yield return new WaitForSeconds(2f);
+        GameObject.Find("Button_TurnEnd").GetComponent<Button>().enabled = true;
         turn_start();
     }
     IEnumerator GameOverCoroutine()
