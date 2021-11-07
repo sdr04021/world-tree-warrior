@@ -20,6 +20,7 @@ public class ButtonTurnEnd : MonoBehaviour
 
     void turnEndClick()
     {
- 
+        GameManager.gm.turn_end();
+
     }
 }

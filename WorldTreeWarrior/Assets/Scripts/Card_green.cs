@@ -12,7 +12,7 @@ public class Card_green : MonoBehaviour
     public int draw_num = 0; // 다음 턴 추가 드로우 수
     public float reduced_damge_percent = 0; // 받는 데미지 감소량(퍼센트)
     public float reduced_damge = 0; // 다음 턴 받는 데미지 감소량
-    public int increased_maxcost = 0; // 다음 턴 상승하는 코스트
+    public int increased_maxCost = 0; // 다음 턴 상승하는 코스트
     public int turn = 0; // 카드 효과가 적용되는 턴 수
 
 
@@ -56,7 +56,7 @@ public class Card_green : MonoBehaviour
                 cost = 4;
                 do_damage = 0;
                 reduced_end_gauge = 4;
-                increased_maxcost = 4;
+                increased_maxCost = 4;
                 break;
             case 8:
                 cost = 4;
@@ -75,12 +75,6 @@ public class Card_green : MonoBehaviour
 
         }
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
 }

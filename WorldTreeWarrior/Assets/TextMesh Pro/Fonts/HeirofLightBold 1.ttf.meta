@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 2894f5fb1f0211347b8a8eee4dcf6606
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Heir of Light Bold
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 46dd5fef929259448bc394c80b46d8ee, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
