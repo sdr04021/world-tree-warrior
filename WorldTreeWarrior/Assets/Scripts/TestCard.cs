@@ -139,7 +139,7 @@ public class TestCard : MonoBehaviour
                 }
                 else if (num == 2)
                 {
-                    GameManager.gm.buff_list.Add("몬스터에게 받는 데미지를 30% 감소\n");
+                    GameManager.gm.buff_list.Add("몬스터에게 받는 데미지를 50% 감소\n");
                     GameManager.gm.refresh_buff_list();
                 }
                 else if (num == 3) // resurr 3번 
@@ -161,6 +161,7 @@ public class TestCard : MonoBehaviour
                 else if (num == 9)
                 {
                     GameManager.gm.buff_list.Add("다음턴 증가되는 멸망 게이지 전부 0\n");
+                    GameManager.gm.resurr9 = true;
                     GameManager.gm.refresh_buff_list();
                 }
             }
@@ -196,7 +197,7 @@ public class TestCard : MonoBehaviour
             if (GameManager.gm.used_resurr.Contains(5)) // resurr 5번
             {
                 //GameManager.gm.destructionGauge -= 3;
-                StartCoroutine(GameManager.gm.DecreaseGauge(3, 0));
+                StartCoroutine(GameManager.gm.DecreaseGauge(10, 0));
                 if (GameManager.gm.destructionGauge < 0) GameManager.gm.destructionGauge = 0;
                 GameManager.gm.used_resurr.Remove(5);
             }
@@ -204,14 +205,14 @@ public class TestCard : MonoBehaviour
             if (GameManager.gm.used_resurr.Contains(7)) // resurr 7번
             {
                 //GameManager.gm.destructionGauge -= 4;
-                StartCoroutine(GameManager.gm.DecreaseGauge(4, 0));
+                StartCoroutine(GameManager.gm.DecreaseGauge(10, 0));
                 if (GameManager.gm.destructionGauge < 0) GameManager.gm.destructionGauge = 0;
             }
 
             if (GameManager.gm.used_resurr.Contains(8)) // resurr 8번
             {
                 //GameManager.gm.destructionGauge -= 5;
-                StartCoroutine(GameManager.gm.DecreaseGauge(5, 0));
+                StartCoroutine(GameManager.gm.DecreaseGauge(20, 0));
                 if (GameManager.gm.destructionGauge < 0) GameManager.gm.destructionGauge = 0;
                 GameManager.gm.used_resurr.Remove(8); 
             }

@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
     public bool cost_zero = false;
     //public int turn_check_10 = 0;
     public int used_count = 0;
+    public bool resurr9 = false;
 
     public GameObject monster1;
     public GameObject monster2;
@@ -237,6 +238,7 @@ public class GameManager : MonoBehaviour
         {
             total_increase_gauge = 0;
             used_resurr.Remove(9);
+            resurr9 = false;
             buff_list.Remove("다음턴 증가되는 멸망 게이지 전부 0\n");
             refresh_buff_list();
         }
