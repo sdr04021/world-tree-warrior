@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     //public int turn_check_10 = 0;
     public int used_count = 0;
     public bool resurr9 = false;
+    public int resurr7 = 0;
 
     public GameObject monster1;
     public GameObject monster2;
@@ -166,6 +167,7 @@ public class GameManager : MonoBehaviour
         {
             maxCost += 4;
             used_resurr.Remove(7);
+            resurr7 = 0;
             buff_list.Remove("다음 턴 최대 코스트 +4\n");
             refresh_buff_list();
         }
