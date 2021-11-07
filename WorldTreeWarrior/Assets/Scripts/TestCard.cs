@@ -160,7 +160,7 @@ public class TestCard : MonoBehaviour
                 }
                 else if (num == 9)
                 {
-                    GameManager.gm.buff_list.Add("다음턴 소모되는 멸망 게이지 전부 0\n");
+                    GameManager.gm.buff_list.Add("다음턴 증가되는 멸망 게이지 전부 0\n");
                     GameManager.gm.refresh_buff_list();
                 }
             }
@@ -213,7 +213,7 @@ public class TestCard : MonoBehaviour
                 //GameManager.gm.destructionGauge -= 5;
                 StartCoroutine(GameManager.gm.DecreaseGauge(5, 0));
                 if (GameManager.gm.destructionGauge < 0) GameManager.gm.destructionGauge = 0;
-                GameManager.gm.used_resurr.Remove(8); // 나중에 수정 
+                GameManager.gm.used_resurr.Remove(8); 
             }
 
             Destroy(gameObject); // 사용한 카드 파괴

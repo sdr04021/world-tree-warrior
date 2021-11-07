@@ -236,7 +236,7 @@ public class GameManager : MonoBehaviour
         {
             total_increase_gauge = 0;
             used_resurr.Remove(9);
-            buff_list.Remove("다음턴 소모되는 멸망 게이지 전부 0\n");
+            buff_list.Remove("다음턴 증가되는 멸망 게이지 전부 0\n");
             refresh_buff_list();
         }
 
@@ -352,13 +352,15 @@ public class GameManager : MonoBehaviour
     }
     public IEnumerator DecreaseGauge(int amount, float delay)
     {
-        yield return new WaitForSeconds(delay);
+        //Debug.Log("멸망게이지 감소: " + amount);
         for (int i = 0; i < amount; i++)
         {
-            yield return new WaitForSeconds(0.02f);
+            
             if (destructionGauge > 0) destructionGauge--;
         }
         if (destructionGauge < 0) destructionGauge = 0;
+        //Debug.Log(destructionGauge);
+        yield return null;
     }
     IEnumerator PlayerTurnStartAfterDelay()
     {

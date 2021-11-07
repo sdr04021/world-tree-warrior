@@ -62,14 +62,14 @@ public class Card_green : MonoBehaviour
                 cost = 4;
                 do_damage = 0;
                 reduced_end_gauge = 5;
-                // 적한테 공격받을때마다 멸망게이지 -1
                 break;
             case 9:
                 cost = 15;
                 reduced_end_gauge_percent = 1; // 오르는 멸망게이지 100% 감소
                 break;
             case 10:
-                cost = 7;
+                cost = 3;
+                do_damage = 10;
                 // 멸망게이지 -= 다음 턴에 사용하는 카드 장수 * 2
                 break;
 
